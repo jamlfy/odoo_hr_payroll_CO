@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_seed_template_tree" model="ir.ui.view">
+        <field name="name">hr.payroll.co.seed.template.tree</field>
+        <field name="model">hr.payroll.co.seed.template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_seed_template_form" model="ir.ui.view">
+        <field name="name">hr.payroll.co.seed.template.form</field>
+        <field name="model">hr.payroll.co.seed.template</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_seed_template" model="ir.actions.act_window">
+        <field name="name">Seed Templates</field>
+        <field name="res_model">hr.payroll.co.seed.template</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_seed_template_root"
+              name="Seed Templates"
+              parent="base.menu_custom"
+              action="action_seed_template"
+              sequence="50"/>
+</odoo>

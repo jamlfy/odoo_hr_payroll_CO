@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_seed_template_user,access.seed.template.user,model_hr_payroll_co_seed_template,hr_payroll_co_seed.group_seed_template_user,1,0,0,0
+access_seed_template_manager,access.seed.template.manager,model_hr_payroll_co_seed_template,hr_payroll_co_seed.group_seed_template_manager,1,1,1,1
