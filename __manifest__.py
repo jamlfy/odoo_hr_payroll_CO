@@ -1,16 +1,16 @@
 {
-    'name': 'HR Payroll CO - Module Seed',
+    'name': 'HR Payroll Colombia - Rules',
     'version': '18.0.1.0.0',
     'summary': 'Scaffold seed for HR Payroll CO Odoo modules',
     'description': """
-HR Payroll CO - Module Seed
+HR Payroll CO
 ===========================
 
 This is a reusable module scaffold/seed to bootstrap new Odoo modules
 following basic conventions. Use this as a starting point.
     """,
-    'author': 'HR Payroll CO',
-    'website': '',
+    'author': 'Jam <j4mlfy@gmail.com>',
+    'website': 'http://jam2tech.co',
     'license': 'LGPL-3',
     'category': 'Payroll',
     'depends': ['base'],
